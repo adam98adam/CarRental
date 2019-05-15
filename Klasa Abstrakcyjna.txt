@@ -1,0 +1,84 @@
+#include<iostream>
+#define _USE_MATH_DEFINES
+#include<math.h>
+using namespace std;
+class Figura {
+public:
+	virtual float pole() = 0;
+};
+class Trojkat : public Figura{
+private:
+	float podstawa;
+	float wysokosc;
+public:
+	Trojkat() {}
+	float pole() {
+	
+		return  (podstawa * wysokosc) / 2;
+	}
+	friend ostream& operator << (ostream& out, Trojkat & s) {
+		out << "Pole trojkata wynosi: " << s.pole() << endl;
+		return out;
+	}
+	friend istream& operator >> (istream& in, Trojkat & s) {
+		cout << "Podaj podstawe trojkata : ";
+		in >> s.podstawa;
+		cout << "Podaj wysokosc trojkata : ";
+		in >> s.wysokosc;
+		return in;
+	}
+};
+class Kwadrat:public Figura {
+private:
+	float bok;
+public:
+	Kwadrat() {}
+	float pole() {
+
+		return  bok * bok;
+	}
+	friend ostream& operator << (ostream& out, Kwadrat & s) {
+		out << "Pole Kwadratu wynosi: " << s.pole() << endl;
+		return out;
+	}
+	friend istream& operator >> (istream& in, Kwadrat & s) {
+		cout << "Podaj bok kwadratu : ";
+		in >> s.bok;
+		return in;
+	}
+};
+class Kolo :public Figura {
+private:
+	float promien;
+public:
+	Kolo() {}
+	float pole() {
+		return M_PI * promien*promien;
+	}
+	friend ostream& operator << (ostream& out, Kolo & s) {
+		out << "Pole Kola wynosi: " << s.pole() << endl;
+		return out;
+	}
+	friend istream& operator >> (istream& in, Kolo & s) {
+		cout << "Podaj promien kola : ";
+		in >> s.promien;
+		return in;
+	}
+
+
+};
+
+int main() {
+	Kwadrat k1;
+	Trojkat t1;
+	Kwadrat kw1;
+	cin >> k1;
+	Figura *wsk = &k1;
+	cout << wsk->pole() << endl;
+	cin >> t1;
+	wsk = &t1;
+	cout << wsk->pole();
+	cin.get();
+	cin.get();
+	return 0;
+}
