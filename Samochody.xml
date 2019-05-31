@@ -1,0 +1,165 @@
+<wypozyczalniaSamochodow nazwa="Carent">
+	<lokalizacja>
+		<miasto>Gdansk</miasto>
+		<ulica>Grunwaldzka</ulica>
+		<numerUlicy>50</numerUlicy>
+		<telefon>837256341</telefon>
+		<email>Carent@gmail,com</email>
+		<godzinaOtwarcia>10</godzinaOtwarcia>
+		<godzinaZamkniecia>18</godzinaZamkniecia>
+	</lokalizacja>
+	<samochody>
+		<samochod id="1">
+			<typ>Sportowy</typ>
+			<marka>BMW</marka>
+			<model>M4</model>
+			<kolor>Czarny</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="2">
+			<typ>Suv</typ>
+			<marka>Toyota</marka>
+			<model>RAV4</model>
+			<kolor>Czarny</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="3">
+			<typ>Miejski</typ>
+			<marka>Toyota</marka>
+			<model>Yaris</model>
+			<kolor>Bialy</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Diesel</paliwo>
+		</samochod>
+		<samochod id="4">
+			<typ>Rodzinny</typ>
+			<marka>Honda</marka>
+			<model>CR-V</model>
+			<kolor>Srebrny</kolor>
+			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="5">
+			<typ>Sportowy</typ>
+			<marka>Audi</marka>
+			<model>A6</model>
+			<kolor>Czerwony</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Diesel</paliwo>
+		</samochod>
+		<samochod id="6">
+			<typ>Miejski</typ>
+			<marka>Toyota</marka>
+			<model>RAV4</model>
+			<kolor>Czarny</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="7">
+			<typ>Miejski</typ>
+			<marka>Toyota</marka>
+			<model>Yaris</model>
+			<kolor>Bialy</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Diesel</paliwo>
+		</samochod>
+		<samochod id="8">
+			<typ>Rodzinny</typ>
+			<marka>Honda</marka>
+			<model>CR-V</model>
+			<kolor>Srebrny</kolor>
+			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="1">
+			<typ>Sportowy</typ>
+			<marka>BMW</marka>
+			<model>M4</model>
+			<kolor>Czarny</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="2">
+			<typ>Suv</typ>
+			<marka>Toyota</marka>
+			<model>RAV4</model>
+			<kolor>Czarny</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="3">
+			<typ>Miejski</typ>
+			<marka>Toyota</marka>
+			<model>Yaris</model>
+			<kolor>Bialy</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Diesel</paliwo>
+		</samochod>
+		<samochod id="4">
+			<typ>Rodzinny</typ>
+			<marka>Honda</marka>
+			<model>CR-V</model>
+			<kolor>Srebrny</kolor>
+			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="5">
+			<typ>Sportowy</typ>
+			<marka>BMW</marka>
+			<model>M4</model>
+			<kolor>Czarny</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="6">
+			<typ>Suv</typ>
+			<marka>Toyota</marka>
+			<model>RAV4</model>
+			<kolor>Czarny</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="7">
+			<typ>Miejski</typ>
+			<marka>Toyota</marka>
+			<model>Yaris</model>
+			<kolor>Bialy</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Diesel</paliwo>
+		</samochod>
+		<samochod id="8">
+			<typ>Rodzinny</typ>
+			<marka>Honda</marka>
+			<model>CR-V</model>
+			<kolor>Srebrny</kolor>
+			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+	</samochody>
+		<cennik>
+			<cena typ="Sportowy">
+				<dzien>400</dzien>
+				<tydzien>1500</tydzien>
+				<miesiac>3000</miesiac>
+			</cena>
+			<cena typ="Miejski">
+				<dzien>200</dzien>
+				<tydzien>800</tydzien>
+				<miesiac>2000</miesiac>
+			</cena>
+			<cena typ="Suv">
+				<dzien>300</dzien>
+				<tydzien>1200</tydzien>
+				<miesiac>2500</miesiac>
+			</cena>
+			<cena typ="Rodzinny">
+				<dzien>250</dzien>
+				<tydzien>1000</tydzien>
+				<miesiac>2200</miesiac>
+			</cena>
+		</cennik>
+</wypozyczalniaSamochodow>
+		
+		
