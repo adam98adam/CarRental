@@ -17,7 +17,7 @@
 		<typSamochodu>Suv</typSamochodu>
 	</typySamochodow>
 	<samochody>
-		<samochod id="1">
+		<samochod id="s1">
 			<typ>Sportowy</typ>
 			<marka>BMW</marka>
 			<model>M4</model>
@@ -25,7 +25,7 @@
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
-		<samochod id="2">
+		<samochod id="s2">
 			<typ>Suv</typ>
 			<marka>Toyota</marka>
 			<model>RAV4</model>
@@ -33,7 +33,7 @@
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
-		<samochod id="3">
+		<samochod id="s3">
 			<typ>Miejski</typ>
 			<marka>Toyota</marka>
 			<model>Yaris</model>
@@ -41,7 +41,7 @@
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Diesel</paliwo>
 		</samochod>
-		<samochod id="4">
+		<samochod id="s4">
 			<typ>Rodzinny</typ>
 			<marka>Honda</marka>
 			<model>CR-V</model>
@@ -49,7 +49,7 @@
 			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
-		<samochod id="5">
+		<samochod id="s5">
 			<typ>Sportowy</typ>
 			<marka>Audi</marka>
 			<model>A6</model>
@@ -57,7 +57,7 @@
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Diesel</paliwo>
 		</samochod>
-		<samochod id="6">
+		<samochod id="s6">
 			<typ>Miejski</typ>
 			<marka>Renault</marka>
 			<model>Clio</model>
@@ -65,7 +65,7 @@
 			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
-		<samochod id="7">
+		<samochod id="s7">
 			<typ>Suv</typ>
 			<marka>Suzuki</marka>
 			<model>Vitara</model>
@@ -73,7 +73,7 @@
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Diesel</paliwo>
 		</samochod>
-		<samochod id="8">
+		<samochod id="s8">
 			<typ>Rodzinny</typ>
 			<marka>Ford</marka>
 			<model>Focus</model>
@@ -81,7 +81,7 @@
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
-		<samochod id="9">
+		<samochod id="s9">
 			<typ>Sportowy</typ>
 			<marka>Mercedes</marka>
 			<model>AMG</model>
@@ -89,7 +89,7 @@
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
-		<samochod id="10">
+		<samochod id="s10">
 			<typ>Suv</typ>
 			<marka>Mazda</marka>
 			<model>CX-9</model>
@@ -97,7 +97,7 @@
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
-		<samochod id="11">
+		<samochod id="s11">
 			<typ>Miejski</typ>
 			<marka>Skoda</marka>
 			<model>Fabia</model>
@@ -105,7 +105,7 @@
 			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
 			<paliwo>Diesel</paliwo>
 		</samochod>
-		<samochod id="12">
+		<samochod id="s12">
 			<typ>Rodzinny</typ>
 			<marka>Volkswagen</marka>
 			<model>Passat</model>
@@ -113,7 +113,7 @@
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Diesel</paliwo>
 		</samochod>
-		<samochod id="13">
+		<samochod id="s13">
 			<typ>Sportowy</typ>
 			<marka>Porsche</marka>
 			<model>Panamera</model>
@@ -121,7 +121,7 @@
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
-		<samochod id="14">
+		<samochod id="s14">
 			<typ>Suv</typ>
 			<marka>Nissan</marka>
 			<model>Quashqai</model>
@@ -129,7 +129,7 @@
 			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
 			<paliwo>Diesel</paliwo>
 		</samochod>
-		<samochod id="15">
+		<samochod id="s15">
 			<typ>Miejski</typ>
 			<marka>Citroen</marka>
 			<model>C3</model>
@@ -137,7 +137,7 @@
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Diesel</paliwo>
 		</samochod>
-		<samochod id="16">
+		<samochod id="s16">
 			<typ>Rodzinny</typ>
 			<marka>Peugeot</marka>
 			<model>307</model>
@@ -169,67 +169,67 @@
 		</cena>
 	</cennik>
 	<wypozyczenia>
-		<wypozyczenie i="1">
+		<wypozyczenie i="s1">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="2">
+		<wypozyczenie i="s2">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="3">
+		<wypozyczenie i="s3">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="4">
+		<wypozyczenie i="s4">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="5">
+		<wypozyczenie i="s5">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="6">
+		<wypozyczenie i="s6">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="7">
+		<wypozyczenie i="s7">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="8">
+		<wypozyczenie i="s8">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="9">
+		<wypozyczenie i="s9">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="10">
+		<wypozyczenie i="s10">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="11">
+		<wypozyczenie i="s11">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="12">
+		<wypozyczenie i="s12">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="13">
+		<wypozyczenie i="s13">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="14">
+		<wypozyczenie i="s14">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="15">
+		<wypozyczenie i="s15">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="16">
+		<wypozyczenie i="s16">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
