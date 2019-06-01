@@ -1,13 +1,21 @@
-<wypozyczalniaSamochodow nazwa="Carent">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE wypozyczalniaSamochodow SYSTEM "Samochody.dtd">
+<wypozyczalniaSamochodow>
 	<lokalizacja>
 		<miasto>Gdansk</miasto>
 		<ulica>Grunwaldzka</ulica>
 		<numerUlicy>50</numerUlicy>
 		<telefon>837256341</telefon>
-		<email>Carent@gmail,com</email>
+		<email>Carent@gmail.com</email>
 		<godzinaOtwarcia>10</godzinaOtwarcia>
 		<godzinaZamkniecia>18</godzinaZamkniecia>
 	</lokalizacja>
+	<typySamochodow>
+		<typSamochodu>Sportowy</typSamochodu>
+		<typSamochodu>Miejski</typSamochodu>
+		<typSamochodu>Rodzinny</typSamochodu>
+		<typSamochodu>Suv</typSamochodu>
+	</typySamochodow>
 	<samochody>
 		<samochod id="1">
 			<typ>Sportowy</typ>
@@ -51,115 +59,181 @@
 		</samochod>
 		<samochod id="6">
 			<typ>Miejski</typ>
-			<marka>Toyota</marka>
-			<model>RAV4</model>
-			<kolor>Czarny</kolor>
-			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<marka>Renault</marka>
+			<model>Clio</model>
+			<kolor>Niebieski</kolor>
+			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
 		<samochod id="7">
-			<typ>Miejski</typ>
-			<marka>Toyota</marka>
-			<model>Yaris</model>
-			<kolor>Bialy</kolor>
+			<typ>Suv</typ>
+			<marka>Suzuki</marka>
+			<model>Vitara</model>
+			<kolor>Czarny</kolor>
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Diesel</paliwo>
 		</samochod>
 		<samochod id="8">
 			<typ>Rodzinny</typ>
-			<marka>Honda</marka>
-			<model>CR-V</model>
-			<kolor>Srebrny</kolor>
-			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
+			<marka>Ford</marka>
+			<model>Focus</model>
+			<kolor>Fioletowy</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
-		<samochod id="1">
+		<samochod id="9">
 			<typ>Sportowy</typ>
-			<marka>BMW</marka>
-			<model>M4</model>
-			<kolor>Czarny</kolor>
-			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
-			<paliwo>Benzyna</paliwo>
-		</samochod>
-		<samochod id="2">
-			<typ>Suv</typ>
-			<marka>Toyota</marka>
-			<model>RAV4</model>
-			<kolor>Czarny</kolor>
-			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
-			<paliwo>Benzyna</paliwo>
-		</samochod>
-		<samochod id="3">
-			<typ>Miejski</typ>
-			<marka>Toyota</marka>
-			<model>Yaris</model>
+			<marka>Mercedes</marka>
+			<model>AMG</model>
 			<kolor>Bialy</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="10">
+			<typ>Suv</typ>
+			<marka>Mazda</marka>
+			<model>CX-9</model>
+			<kolor>Czerwony</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
+			<paliwo>Benzyna</paliwo>
+		</samochod>
+		<samochod id="11">
+			<typ>Miejski</typ>
+			<marka>Skoda</marka>
+			<model>Fabia</model>
+			<kolor>Niebieski</kolor>
+			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
+			<paliwo>Diesel</paliwo>
+		</samochod>
+		<samochod id="12">
+			<typ>Rodzinny</typ>
+			<marka>Volkswagen</marka>
+			<model>Passat</model>
+			<kolor>Srebrny</kolor>
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Diesel</paliwo>
 		</samochod>
-		<samochod id="4">
-			<typ>Rodzinny</typ>
-			<marka>Honda</marka>
-			<model>CR-V</model>
-			<kolor>Srebrny</kolor>
-			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
-			<paliwo>Benzyna</paliwo>
-		</samochod>
-		<samochod id="5">
+		<samochod id="13">
 			<typ>Sportowy</typ>
-			<marka>BMW</marka>
-			<model>M4</model>
-			<kolor>Czarny</kolor>
+			<marka>Porsche</marka>
+			<model>Panamera</model>
+			<kolor>Zolty</kolor>
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
-		<samochod id="6">
+		<samochod id="14">
 			<typ>Suv</typ>
-			<marka>Toyota</marka>
-			<model>RAV4</model>
+			<marka>Nissan</marka>
+			<model>Quashqai</model>
 			<kolor>Czarny</kolor>
-			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
-			<paliwo>Benzyna</paliwo>
+			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
+			<paliwo>Diesel</paliwo>
 		</samochod>
-		<samochod id="7">
+		<samochod id="15">
 			<typ>Miejski</typ>
-			<marka>Toyota</marka>
-			<model>Yaris</model>
-			<kolor>Bialy</kolor>
+			<marka>Citroen</marka>
+			<model>C3</model>
+			<kolor>Niebieski</kolor>
 			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Diesel</paliwo>
 		</samochod>
-		<samochod id="8">
+		<samochod id="16">
 			<typ>Rodzinny</typ>
-			<marka>Honda</marka>
-			<model>CR-V</model>
-			<kolor>Srebrny</kolor>
-			<skrzyniaBiegow>Manualna</skrzyniaBiegow>
+			<marka>Peugeot</marka>
+			<model>307</model>
+			<kolor>Czarny</kolor>
+			<skrzyniaBiegow>Automatyczna</skrzyniaBiegow>
 			<paliwo>Benzyna</paliwo>
 		</samochod>
 	</samochody>
-		<cennik>
-			<cena typ="Sportowy">
-				<dzien>400</dzien>
-				<tydzien>1500</tydzien>
-				<miesiac>3000</miesiac>
-			</cena>
-			<cena typ="Miejski">
-				<dzien>200</dzien>
-				<tydzien>800</tydzien>
-				<miesiac>2000</miesiac>
-			</cena>
-			<cena typ="Suv">
-				<dzien>300</dzien>
-				<tydzien>1200</tydzien>
-				<miesiac>2500</miesiac>
-			</cena>
-			<cena typ="Rodzinny">
-				<dzien>250</dzien>
-				<tydzien>1000</tydzien>
-				<miesiac>2200</miesiac>
-			</cena>
-		</cennik>
+	<cennik>
+		<cena typ="Sportowy">
+			<dzien>400</dzien>
+			<tydzien>1500</tydzien>
+			<miesiac>3000</miesiac>
+		</cena>
+		<cena typ="Miejski">
+			<dzien>200</dzien>
+			<tydzien>800</tydzien>
+			<miesiac>2000</miesiac>
+		</cena>
+		<cena typ="Suv">
+			<dzien>300</dzien>
+			<tydzien>1200</tydzien>
+			<miesiac>2500</miesiac>
+		</cena>
+		<cena typ="Rodzinny">
+			<dzien>250</dzien>
+			<tydzien>1000</tydzien>
+			<miesiac>2200</miesiac>
+		</cena>
+	</cennik>
+	<wypozyczenia>
+		<wypozyczenie i="1">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-08</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="2">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-13</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="3">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-08</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="4">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-13</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="5">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-08</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="6">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-13</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="7">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-08</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="8">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-13</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="9">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-08</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="10">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-13</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="11">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-08</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="12">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-13</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="13">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-13</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="14">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-08</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="15">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-13</dataZwrotu>
+		</wypozyczenie>
+		<wypozyczenie i="16">
+			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
+			<dataZwrotu>2019-02-08</dataZwrotu>
+		</wypozyczenie>
+	</wypozyczenia>
 </wypozyczalniaSamochodow>
 		
 		

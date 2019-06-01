@@ -1,0 +1,32 @@
+<!ELEMENT wypozyczalniaSamochodow (lokalizacja,typySamochodow,samochody,cennik,wypozyczenia)>
+<!ELEMENT lokalizacja (miasto,ulica,numerUlicy,telefon,email,godzinaOtwarcia,godzinaZamkniecia)>
+<!ELEMENT typySamochodow (typSamochodu+)>
+<!ELEMENT samochody (samochod+)>
+<!ELEMENT samochod (typ,marka,model,kolor,skrzyniaBiegow,paliwo)>
+<!ELEMENT cennik (cena+)>
+<!ELEMENT cena (dzien,tydzien,miesiac)>
+<!ELEMENT wypozyczenia (wypozyczenie+)>
+<!ELEMENT wypozyczenie (dataWypozyczenia,dataZwrotu)>
+<!ELEMENT miasto (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT numerUlicy (#PCDATA)>
+<!ELEMENT telefon (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT godzinaOtwarcia (#PCDATA)>
+<!ELEMENT godzinaZamkniecia (#PCDATA)>
+<!ELEMENT typSamochodu (#PCDATA)>
+<!ELEMENT typ (#PCDATA)>
+<!ELEMENT marka (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT kolor (#PCDATA)>
+<!ELEMENT skrzyniaBiegow (#PCDATA)>
+<!ELEMENT paliwo (#PCDATA)>
+<!ELEMENT dzien (#PCDATA)>
+<!ELEMENT tydzien (#PCDATA)>
+<!ELEMENT miesiac (#PCDATA)>
+<!ELEMENT dataWypozyczenia (#PCDATA)>
+<!ELEMENT dataZwrotu (#PCDATA)>
+
+<!ATTLIST cena typ (Suv|Miejski|Rodzinny|Sportowy) #REQUIRED>
+<!ATTLIST samochod id ID #REQUIRED>
+<!ATTLIST wypozyczenie i IDREF #REQUIRED>
