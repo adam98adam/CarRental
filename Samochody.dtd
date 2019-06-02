@@ -1,10 +1,10 @@
-<!ELEMENT wypozyczalniaSamochodow (lokalizacja,typySamochodow,samochody,cennik,wypozyczenia)>
+<!ENTITY % cena "dzien,tydzien,miesiac">
+<!ELEMENT wypozyczalniaSamochodow (lokalizacja,samochody,cennik,wypozyczenia)>
 <!ELEMENT lokalizacja (miasto,ulica,numerUlicy,telefon,email,godzinaOtwarcia,godzinaZamkniecia)>
-<!ELEMENT typySamochodow (typSamochodu+)>
 <!ELEMENT samochody (samochod+)>
 <!ELEMENT samochod (typ,marka,model,kolor,skrzyniaBiegow,paliwo)>
 <!ELEMENT cennik (cena+)>
-<!ELEMENT cena (dzien,tydzien,miesiac)>
+<!ELEMENT cena (%cena;)>
 <!ELEMENT wypozyczenia (wypozyczenie+)>
 <!ELEMENT wypozyczenie (dataWypozyczenia,dataZwrotu)>
 <!ELEMENT miasto (#PCDATA)>
@@ -14,7 +14,6 @@
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT godzinaOtwarcia (#PCDATA)>
 <!ELEMENT godzinaZamkniecia (#PCDATA)>
-<!ELEMENT typSamochodu (#PCDATA)>
 <!ELEMENT typ (#PCDATA)>
 <!ELEMENT marka (#PCDATA)>
 <!ELEMENT model (#PCDATA)>
@@ -29,4 +28,5 @@
 
 <!ATTLIST cena typ (Suv|Miejski|Rodzinny|Sportowy) #REQUIRED>
 <!ATTLIST samochod id ID #REQUIRED>
-<!ATTLIST wypozyczenie i IDREF #REQUIRED>
+<!ATTLIST wypozyczenie id ID #REQUIRED>
+<!ATTLIST wypozyczenie samochod IDREF #REQUIRED>

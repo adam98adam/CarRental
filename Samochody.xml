@@ -10,12 +10,6 @@
 		<godzinaOtwarcia>10</godzinaOtwarcia>
 		<godzinaZamkniecia>18</godzinaZamkniecia>
 	</lokalizacja>
-	<typySamochodow>
-		<typSamochodu>Sportowy</typSamochodu>
-		<typSamochodu>Miejski</typSamochodu>
-		<typSamochodu>Rodzinny</typSamochodu>
-		<typSamochodu>Suv</typSamochodu>
-	</typySamochodow>
 	<samochody>
 		<samochod id="s1">
 			<typ>Sportowy</typ>
@@ -169,67 +163,67 @@
 		</cena>
 	</cennik>
 	<wypozyczenia>
-		<wypozyczenie i="s1">
+		<wypozyczenie id="w1" samochod="s1">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s2">
+		<wypozyczenie id="w2" samochod="s2">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s3">
+		<wypozyczenie id="w3" samochod="s3">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s4">
+		<wypozyczenie id="w4" samochod="s4">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s5">
+		<wypozyczenie id="w5" samochod="s5">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s6">
+		<wypozyczenie id="w6" samochod="s6">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s7">
+		<wypozyczenie id="w7" samochod="s7">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s8">
+		<wypozyczenie id="w8" samochod="s8">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s9">
+		<wypozyczenie id="w9" samochod="s9">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s10">
+		<wypozyczenie id="w10" samochod="s10">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s11">
+		<wypozyczenie id="w11" samochod="s11">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s12">
+		<wypozyczenie id="w12" samochod="s12">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s13">
+		<wypozyczenie id="w13" samochod="s13">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s14">
+		<wypozyczenie id="w14" samochod="s14">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s15">
+		<wypozyczenie id="w15" samochod="s15">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-13</dataZwrotu>
 		</wypozyczenie>
-		<wypozyczenie i="s16">
+		<wypozyczenie id="w16" samochod="s16">
 			<dataWypozyczenia>2019-02-05</dataWypozyczenia>
 			<dataZwrotu>2019-02-08</dataZwrotu>
 		</wypozyczenie>

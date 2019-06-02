@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="wypozyczalniaSamochodow" type="wypozyczalniaSamochodowtype">
+	<xs:key name="samochodid">
+		<xs:selector xpath="./samochody/samochod"/>
+		<xs:field xpath="@id"/>
+	</xs:key>
+
+
+	<xs:keyref name="idrefer" refer="samochodid">
+		<xs:selector xpath="./wypozyczenia/wypozyczenie"/>
+		<xs:field xpath="@samochod"/>
+	</xs:keyref>
+
+</xs:element>
+
+<xs:simpleType name="stringtype">
+	<xs:restriction base="xs:string"/>
+</xs:simpleType>
+
+<xs:simpleType name="inttype">
+	<xs:restriction base="xs:positiveInteger"/>
+</xs:simpleType>
+
+<xs:simpleType name="datetype">
+	<xs:restriction base="xs:date"/>
+</xs:simpleType>
+
+
+<xs:simpleType name="typtype">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Rodzinny"/>
+		<xs:enumeration value="Sportowy"/>
+		<xs:enumeration value="Miejski"/>
+		<xs:enumeration value="Suv"/>
+	</xs:restriction>
+</xs:simpleType>
+
+
+
+
+<xs:simpleType name="paliwotype">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Benzyna"/>
+		<xs:enumeration value="Diesel"/>
+	</xs:restriction>
+</xs:simpleType>
+
+
+<xs:simpleType name="skrzyniaBiegowtype">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="Automatyczna"/>
+		<xs:enumeration value="Manualna"/>
+	</xs:restriction>
+</xs:simpleType>
+
+
+
+<xs:simpleType name="telefontype">
+	<xs:restriction base="xs:string">
+		<xs:length value="9"/>
+	</xs:restriction>
+</xs:simpleType>
+
+
+
+<xs:simpleType name="emailtype">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[a-zA-Z][a-zA-Z0-9]+@gmail.com"/>
+	</xs:restriction>
+</xs:simpleType>
+
+
+<xs:complexType name="lokalizacjatype">
+	<xs:sequence>
+		<xs:element name="miasto" type="stringtype"/>
+		<xs:element name="ulica" type="stringtype"/>
+		<xs:element name="numerUlicy" type="inttype"/>
+		<xs:element name="telefon" type="telefontype"/>
+		<xs:element name="email" type="emailtype"/>
+		<xs:element name="godzinaOtwarcia" type="inttype"/>
+		<xs:element name="godzinaZamkniecia" type="inttype"/>
+	</xs:sequence>
+</xs:complexType>
+
+
+
+<xs:complexType name="samochodtype">
+	<xs:sequence>
+		<xs:element name="typ" type="typtype"/>
+		<xs:element name="marka" type="stringtype"/>
+		<xs:element name="model" type="stringtype"/>
+		<xs:element name="kolor" type="stringtype"/>
+		<xs:element name="skrzyniaBiegow" type="skrzyniaBiegowtype"/>
+		<xs:element name="paliwo" type="paliwotype"/>
+	</xs:sequence>
+	<xs:attribute name="id" type="stringtype" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="cenatype">
+	<xs:sequence>
+		<xs:element name="dzien" type="inttype"/>
+		<xs:element name="tydzien" type="inttype"/>
+		<xs:element name="miesiac" type="inttype"/>
+	</xs:sequence>
+	<xs:attribute name="typ" type="typtype" use="required"/>
+</xs:complexType>
+
+
+<xs:complexType name="wypozyczenietype">
+	<xs:sequence>
+		<xs:element name="dataWypozyczenia" type="datetype"/>
+		<xs:element name="dataZwrotu" type="datetype"/>
+	</xs:sequence>
+	<xs:attribute name="id" type="stringtype" use="required"/>
+	<xs:attribute name="samochod" type="stringtype" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="samochodytype">
+	<xs:sequence>
+		<xs:element name="samochod" type="samochodtype" maxOccurs="unbounded"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cenniktype">
+	<xs:sequence>
+		<xs:element name="cena" type="cenatype" maxOccurs="4"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wypozyczeniatype">
+	<xs:sequence>
+		<xs:element name="wypozyczenie" type="wypozyczenietype" maxOccurs="unbounded"/>
+	</xs:sequence>	
+</xs:complexType>
+
+<xs:complexType name="wypozyczalniaSamochodowtype">
+	<xs:sequence>
+		<xs:element name="lokalizacja" type="lokalizacjatype"/>
+		<xs:element name="samochody" type="samochodytype"/>
+		<xs:element name="cennik" type="cenniktype"/>
+		<xs:element name="wypozyczenia" type="wypozyczeniatype"/>
+	</xs:sequence>
+</xs:complexType>
+
+
+
+</xs:schema>
+
