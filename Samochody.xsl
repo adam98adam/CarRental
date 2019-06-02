@@ -104,10 +104,20 @@
 		<xsl:for-each select="wypozyczalniaSamochodow/cennik/cena">
 			<xsl:sort select="dzien"/>
 			<li>
-				<td><b><xsl:value-of select="@typ"/></b></td>
-				<td><u><xsl:value-of select="dzien"/></u></td>
-				<td><u><xsl:value-of select="tydzien"/></u></td>
-				<td><u><xsl:value-of select="miesiac"/></u></td>
+			<xsl:choose>
+				<xsl:when test="dzien &lt; 270">
+					<td style="color:red"><b><xsl:value-of select="@typ"/></b></td>
+					<td style="color:red"><u><xsl:value-of select="dzien"/></u></td>
+					<td style="color:red"><u><xsl:value-of select="tydzien"/></u></td>
+					<td style="color:red"><u><xsl:value-of select="miesiac"/></u></td>
+				</xsl:when>
+				<xsl:otherwise>
+					<td style="color:blue"><b><xsl:value-of select="@typ"/></b></td>
+					<td style="color:blue"><u><xsl:value-of select="dzien"/></u></td>
+					<td style="color:blue"><u><xsl:value-of select="tydzien"/></u></td>
+					<td style="color:blue"><u><xsl:value-of select="miesiac"/></u></td>
+				</xsl:otherwise>
+			</xsl:choose>
 			</li>
 		</xsl:for-each>
 	</ol>
