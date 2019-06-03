@@ -1,0 +1,318 @@
+wypozyczalniaSamochodow {
+	background-color: lightgray;
+}
+lokalizacja:before {
+	display: block;
+	width: 8em;
+	font-weight: bold;
+	font-size: 200%;
+	content: "Lokalizacja";
+	margin: -.75em 0px .25em -.25em;
+	padding: .1em .25em;
+	background-color: #8CDDFA;
+  }
+lokalizacja {
+	display: block;
+	background-color: white;
+	margin: 2em 1em;
+	border: 4px solid #8CDDFA;
+	padding: 0px 1em;
+  }
+
+
+miasto:before{
+	content: "Miasto: ";
+}
+ulica:before{
+	content: "Ulica: ";
+}
+numerUlicy:before{
+	content: "Numer ulicy: ";
+
+}
+numerUlicy:before{
+	content: "Numer ulicy: ";
+
+}
+
+telefon:before{
+	content: "Numer ulicy: ";
+}
+
+email:before{
+	content: "Email: ";
+}
+godzinaOtwarcia:before{
+	content: "Godzina Otwarcia: ";
+}
+
+godzinaZamkniecia:before{
+	content: "Godzina Zamkniecia: ";
+
+}
+
+miasto {
+	display: block;
+  }
+ulica {
+	display: block;
+  }
+numerUlicy {
+	display: block;
+  }
+telefon {
+	display: block;
+  }
+email{
+	display: block;
+}
+
+godzinaOtwarcia{
+	display:block;
+}
+godzinaZamkniecia{
+	display:block;
+}
+
+
+	
+}
+samochody:before {
+	display: block;
+	width: 8em;
+	font-weight: bold;
+	font-size: 200%;
+	content: "Samochody";
+	margin: -.75em 0px .25em -.25em;
+	padding: .1em .25em;
+	background-color: orange;
+  }
+
+samochody {
+	display: block;
+	margin: 2em 1em;
+	border: 4px solid orange;
+	padding: 0px 1em;
+	background-color: white;
+  }
+
+samochod {
+	background-color: #E3D789;
+	border: 2px dotted orange;
+	display: block;
+	margin-bottom: 1em;
+	padding: 5px;
+}
+  
+typ:before{
+	content: "Typ: ";
+}
+marka:before{
+	content: "Marka: ";
+}
+model:before{
+	content: "Model: ";
+
+}
+kolor:before{
+	content: "Kolor: ";
+
+}
+
+skrzyniaBiegow:before{
+	content: "Skrzynia Biegow: ";
+}
+
+paliwo:before{
+	content: "Paliwo: ";
+}
+godzinaOtwarcia:before{
+	content: "Godzina Otwarcia: ";
+}
+
+godzinaZamkniecia:before{
+	content: "Godzina Zamkniecia: ";
+
+}
+
+
+typ,marka,model,kolor,skrzyniaBiegow,paliwo{
+	display: block;
+}
+
+
+
+	
+
+
+cennik:before {
+	display: block;
+	width: 6em;
+	font-weight: bold;
+	font-size: 200%;
+	content: "Cennik";
+	margin: -.75em 0px .25em -.25em;
+	padding: .1em .25em;
+	background-color: green;
+  }
+
+
+cennik {
+	display: block;
+	margin: 2em 1em;
+	border: 4px solid green;
+	padding: 0px 1em;
+	background-color: white;
+}
+
+cena:before {
+	display: block;
+	width: 6em;
+	font-weight: bold;
+	font-size: 100%;
+	content: attr(typ);
+	margin: -.75em 0px .25em -.25em;
+	padding: .1em .25em;
+	background-color: green;
+  }
+
+cena {
+	background-color: #E3D789;
+	border: 2px dotted green;
+	display: inline-block;
+	margin-bottom: 1em;
+	padding: 5px;
+}
+
+
+dzien:before{
+	content: "Cena za dzien: "
+}
+
+tydzien:before{
+	content: "Cena za tydzien: "
+}
+
+miesiac:before{
+	content: "Cena za miesiac: " 
+}
+
+dzien{
+	display: block;
+	border: 4px dotted black;
+	margin-bottom: 1em;
+}
+tydzien{
+	display: block;
+	border: 4px dotted black;
+	margin-bottom: 1em;
+}
+miesiac{
+	display: block;
+	border: 4px dotted black;
+	margin-bottom: 1em;
+	
+}
+
+cena[typ="Sportowy"] dzien:hover{
+	background-color: red;
+	
+}
+
+cena[typ="Sportowy"] tydzien:hover{
+	background-color: red;	
+}
+
+cena[typ="Sportowy"] miesiac:hover{
+	background-color: red;	
+}
+
+
+cena[typ="Miejski"] dzien:hover{
+	background-color: lime;
+}
+
+cena[typ="Miejski"] tydzien:hover{
+	background-color: lime;
+}
+
+cena[typ="Miejski"] miesiac:hover{
+	background-color: lime;
+}
+
+cena[typ="Suv"] dzien:hover{
+	background-color: yellow;
+	
+}
+
+cena[typ="Suv"] tydzien:hover{
+	background-color: yellow;
+	
+}
+
+cena[typ="Suv"] miesiac:hover{
+	background-color: yellow;
+	
+}
+
+cena[typ="Rodzinny"] dzien:hover{
+	background-color: blue;
+
+}
+
+cena[typ="Rodzinny"] tydzien:hover{
+	background-color: blue;
+}
+
+cena[typ="Rodzinny"] miesiac:hover{
+	background-color: blue;
+
+}
+
+
+wypozyczenia:before {
+	display: block;
+	width: 8em;
+	font-weight: bold;
+	font-size: 200%;
+	content: "Wypozyczenia";
+	margin: -.75em 0px .25em -.25em;
+	padding: .1em .25em;
+	background-color: purple;
+  }
+
+
+wypozyczenia {
+	display: block;
+	margin: 2em 1em;
+	border: 4px solid purple;
+	padding: 0px 1em;
+	background-color: white;
+}
+
+wypozyczenie {
+	background-color: #E3D789;
+	border: 2px dotted orange;
+	display: inline-block;
+	margin-bottom: 1em;
+	padding: 5px;
+}
+
+
+dataWypozyczenia:before{
+	content: "Data wypozyczenia: "
+}
+
+dataZwrotu:before{
+	content: "Data zwrotu: "
+}
+
+
+
+dataWypozyczenia,dataZwrotu{
+	display:block
+}
+
+
+
+
