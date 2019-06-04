@@ -24,6 +24,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 import org.xml.sax.SAXException;
+/*
 class Samochod{
 	String typ;
 	String marka;
@@ -34,13 +35,14 @@ class Samochod{
 	
 
 }
+*/
 public class SamochodyDom {
 	File xmlFile = new File("Samochody.xml");
 	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
 
 	String id;
-	String field;
+	//String field;
 
 	void print(String filename) throws SAXException, IOException, ParserConfigurationException {
 		xmlFile = new File(filename);
@@ -101,35 +103,35 @@ public class SamochodyDom {
 
 		Element wypozyczalnia = doc.getDocumentElement();
 		NodeList nl = wypozyczalnia.getElementsByTagName("samochod");
-		Element ee = (Element) nl.item(Integer.parseInt(id)-1);
-		//do ee przypisujemy produkt o podanym id
+		Element a = (Element) nl.item(Integer.parseInt(id)-1);
+		
 
 		System.out.print("Typ : ");
-		System.out.print(ee.getElementsByTagName("typ").item(0).getTextContent()+"\n");
+		System.out.print(a.getElementsByTagName("typ").item(0).getTextContent()+"\n");
 		System.out.print("Marka : ");
-		System.out.print(ee.getElementsByTagName("marka").item(0).getTextContent()+"\n");
+		System.out.print(a.getElementsByTagName("marka").item(0).getTextContent()+"\n");
 		System.out.print("Model : ");
-		System.out.print(ee.getElementsByTagName("model").item(0).getTextContent()+"\n");
+		System.out.print(a.getElementsByTagName("model").item(0).getTextContent()+"\n");
 		System.out.print("Kolor : ");
-		System.out.print(ee.getElementsByTagName("kolor").item(0).getTextContent()+"\n");
+		System.out.print(a.getElementsByTagName("kolor").item(0).getTextContent()+"\n");
 		System.out.print("Skrzynia Biegow : ");
-		System.out.print(ee.getElementsByTagName("skrzyniaBiegow").item(0).getTextContent()+"\n");
+		System.out.print(a.getElementsByTagName("skrzyniaBiegow").item(0).getTextContent()+"\n");
 		System.out.print("Paliwo : ");
-		System.out.print(ee.getElementsByTagName("paliwo").item(0).getTextContent()+"\n");
+		System.out.print(a.getElementsByTagName("paliwo").item(0).getTextContent()+"\n");
 		System.out.println("Podaj nowe wartosci. (typ,marka,model,kolor,Skrzynia Biegow,paliwo). Puste pola pozostawiaja je niezmienione.");
 		Scanner keyboard = new Scanner(System.in);
 		String in1 = keyboard.nextLine();
-		if(!in1.isEmpty()) ee.getElementsByTagName("typ").item(0).setTextContent(in1);
+		if(!in1.isEmpty()) a.getElementsByTagName("typ").item(0).setTextContent(in1);
 		in1 = keyboard.nextLine();
-		if(!in1.isEmpty()) ee.getElementsByTagName("marka").item(0).setTextContent(in1);
+		if(!in1.isEmpty()) a.getElementsByTagName("marka").item(0).setTextContent(in1);
 		in1 = keyboard.nextLine();
-		if(!in1.isEmpty()) ee.getElementsByTagName("model").item(0).setTextContent(in1);
+		if(!in1.isEmpty()) a.getElementsByTagName("model").item(0).setTextContent(in1);
 		in1 = keyboard.nextLine();
-		if(!in1.isEmpty()) ee.getElementsByTagName("kolor").item(0).setTextContent(in1);
+		if(!in1.isEmpty()) a.getElementsByTagName("kolor").item(0).setTextContent(in1);
 		in1 = keyboard.nextLine();
-		if(!in1.isEmpty()) ee.getElementsByTagName("skrzyniaBiegow").item(0).setTextContent(in1);
+		if(!in1.isEmpty()) a.getElementsByTagName("skrzyniaBiegow").item(0).setTextContent(in1);
 		in1 = keyboard.nextLine();
-		if(!in1.isEmpty()) ee.getElementsByTagName("paliwo").item(0).setTextContent(in1);
+		if(!in1.isEmpty()) a.getElementsByTagName("paliwo").item(0).setTextContent(in1);
 	
 		TransformerFactory tff = TransformerFactory.newInstance();
 		Transformer tf = tff.newTransformer();
@@ -149,9 +151,9 @@ public class SamochodyDom {
 
 		Element kebabownia = doc.getDocumentElement();
 		NodeList nl = kebabownia.getElementsByTagName("samochod");
-		Element ee = (Element) nl.item(Integer.parseInt(id)-1);
+		Element a = (Element) nl.item(Integer.parseInt(id)-1);
 
-		ee.getParentNode().removeChild(ee);
+		a.getParentNode().removeChild(a);
 
 
 		TransformerFactory tff = TransformerFactory.newInstance();
@@ -162,14 +164,82 @@ public class SamochodyDom {
 		DOMSource ds = new DOMSource(doc);
 		StreamResult sr = new StreamResult("SamochodyDelete.xml");
 		tf.transform(ds, sr);
-}
+		}
+
+		void insertAction() throws ParserConfigurationException, SAXException, IOException, TransformerException {
+		
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Podaj id,typ,marke,model,kolor,skrzynie biegow,paliwo");
+		String id = keyboard.nextLine();
+		String typ = keyboard.nextLine();
+		String marka = keyboard.nextLine();
+		String model = keyboard.nextLine();
+		String kolor = keyboard.nextLine();
+		String skrzyniaBiegow = keyboard.nextLine();
+		String paliwo = keyboard.nextLine();
+
+	
+		DocumentBuilder dBuilder = factory.newDocumentBuilder();
+		Document doc = dBuilder.parse(xmlFile);
+		doc.getDocumentElement().normalize();
+
+		Element wypozyczalniaSamochodow = doc.getDocumentElement();
+		NodeList nl = wypozyczalniaSamochodow.getElementsByTagName("samochody");
+		Element samochody = (Element) nl.item(0);
+
+	
+		Element samochod = doc.createElement("samochod");
+		samochod.setAttribute("id",id);
+	
+		Element typs = doc.createElement("typ");
+		typs.appendChild(doc.createTextNode(typ));
+		samochod.appendChild(typs);
+		
+		Element markas = doc.createElement("marka");
+		markas.appendChild(doc.createTextNode(marka));
+		samochod.appendChild(markas);
+
+		Element models = doc.createElement("model");
+		models.appendChild(doc.createTextNode(model));
+		samochod.appendChild(models);
+		
+		Element kolors = doc.createElement("kolor");
+		kolors.appendChild(doc.createTextNode(kolor));
+		samochod.appendChild(kolors);
+
+		Element skrzyniaBiegows = doc.createElement("skrzyniaBiegow");
+		skrzyniaBiegows.appendChild(doc.createTextNode(skrzyniaBiegow));
+		samochod.appendChild(skrzyniaBiegows);
+		
+		Element paliwos = doc.createElement("paliwo");
+		paliwos.appendChild(doc.createTextNode(paliwo));
+		samochod.appendChild(paliwos);
+
+	
+		samochody.appendChild(samochod);
+		
+		TransformerFactory tff = TransformerFactory.newInstance();
+		Transformer tf = tff.newTransformer();
+		tf.setOutputProperty(OutputKeys.INDENT, "yes");
+		tf.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+		tf.setOutputProperty(OutputKeys.DOCTYPE_PUBLIC,"yes");
+		DOMSource ds = new DOMSource(doc);
+		StreamResult sr = new StreamResult("SamochodInsert.xml");
+		tf.transform(ds, sr);
+
+	}
 
 
 	public static void main(String argv[])  throws SAXException, IOException, ParserConfigurationException, TransformerException{
 		SamochodyDom a = new SamochodyDom();
+		System.out.print("Wyswietlamy samochody : \n\n");
 		a.print("Samochody.xml");
+		System.out.print("Modyfikujemy samochod : \n\n");
 		a.updateAction();
+		System.out.print("Usuwamy samochody : \n\n");
 		a.deleteAction();
+		System.out.print("Wstawiamy samochody : \n\n");
+		a.insertAction();
 		
 	} 
 }
